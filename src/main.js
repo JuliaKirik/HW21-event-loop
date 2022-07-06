@@ -14,13 +14,11 @@ class Post {
     }
 
     async getPost() {
-        return this.getData(this.url)
-         .then((data) => data)
+        return this.getData(this.url);
     }
 
     async getPostComments() {
-        return this.getData(this.commentUrl)
-            .then((data) => data)
+        return this.getData(this.commentUrl);
     }
 
     async renderList() {
